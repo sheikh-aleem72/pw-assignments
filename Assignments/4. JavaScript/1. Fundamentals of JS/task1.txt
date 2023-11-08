@@ -1,0 +1,9 @@
+Task: Explain JavaScript and it's role in web development.
+Ans: 
+JavaScript is a versatile, client-side scripting language used in web development. It plays a pivotal role by enhancing interactivity and functionality in web applications.
+
+Roles in web development:
+1. Client-Side Scripting: JavaScript is primarily used in browsers to create dynamic web content.
+2. Event Handling: It allows developers to respond to user interactions, like clicks and form submissions.
+3. AJAX: JavaScript enables asynchronous data retrieval, enhancing the user experience without reloading the entire page.
+4. Front-End Frameworks: JavaScript is the backbone of popular front-end libraries and frameworks, like React and Angular, for building complex web applications.

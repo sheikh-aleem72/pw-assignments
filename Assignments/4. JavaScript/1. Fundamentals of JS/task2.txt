@@ -1,0 +1,20 @@
+Task: Explain the key differences between JavaScript and HTML. Prove examples of situations where you would use each.
+Ans: 
+
+1. Nature:
+JavaScript: A dynamic, high-level, and versatile scripting language used for adding interactivity to web pages.
+Example: Implementing a real-time search feature on a website to filter and display results as the user types.
+HTML: A static markup language used for structuring and presenting content on web pages.
+Example: Defining the structure of a webpage with headings, paragraphs, links, and images.
+
+2. Usage:
+JavaScript: Utilized for programming logic, handling events, and manipulating the Document Object Model (DOM) in a web browser.
+Example: Creating image sliders, form validation, or interactive maps.
+HTML: Used for creating the overall structure and content of a webpage, defining elements and their layout.
+Example: Crafting the layout of a blog post, structuring a navigation menu, or embedding multimedia content.
+
+3. Execution:
+JavaScript: Requires execution by a browser or a JavaScript engine. It runs as a client-side script, allowing for dynamic updates without page reload.
+Example: Calculating and displaying the total price in a shopping cart as items are added or removed.
+HTML: Parsed and rendered by the browser to display static content. It is primarily responsible for the presentation of web content.
+Example: Displaying a list of items with descriptions and links.

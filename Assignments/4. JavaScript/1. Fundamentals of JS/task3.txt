@@ -1,0 +1,13 @@
+Task: List and describe 5 primitives datatypes in JavaScript.
+Ans:
+JavaScript has five primitive data types:
+
+Number: Represents numeric values, both integers and floating-point numbers. Examples include 42, 3.1416, or -10.
+
+String: Represents sequences of characters enclosed in single ('') or double ("") quotes. For example, "Hello, World!" or 'JavaScript'.
+
+Boolean: Represents a binary value, either true or false. It's used for conditional and logical operations in JavaScript.
+
+Undefined: Indicates that a variable has been declared but hasn't been assigned a value yet. It is also a default value for function parameters that are not provided.
+
+Null: Represents the intentional absence of any object value or no value at all. It is often used to signify the absence of an object or value
