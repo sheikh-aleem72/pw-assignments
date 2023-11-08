@@ -1,0 +1,21 @@
+Task: Describe the usage of the comma operator in JavaScript and provide an example.
+Ans: 
+The comma operator in JavaScript allows you to evaluate multiple expressions, separated by commas, within a single statement. It returns the value of the last expression in the list. While it has limited use cases, it can be employed in several scenarios:
+
+Multiple Variable Declarations:
+You can declare and initialize multiple variables in a single line.
+	let a = 5, b = 10, c = 15;
+
+Multiple Expressions in a for Loop:
+It can be used to include multiple expressions in the initialization or iteration part of a for loop.
+	for (let i = 0, j = 10; i < 5; i++, j--) {
+    	// ...
+	}
+
+Return Multiple Values:
+In a function, you can use the comma operator to return multiple values, but only the last one will be returned.
+	function getValues() {
+ 	   let a = 5, b = 10;
+  	  return a, b; // Returns 10 (the value of b)
+	}
+While the comma operator can be useful in specific situations, it's important to use it judiciously to maintain code readability and avoid confusion, as it can make code less clear when overused.
