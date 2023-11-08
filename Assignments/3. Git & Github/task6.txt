@@ -2,3 +2,6 @@ Task: Deploy Tailwind projects named Youtube, slack, and Gmail clones on GitHub 
 Ans: 
 
 Links: 
+1. youtube clone - https://sheikh-aleem72.github.io/youtube-clone/
+2. slack clone - https://sheikh-aleem72.github.io/slack-clone/
+3. gmail clone - https://sheikh-aleem72.github.io/gmail-clone/
