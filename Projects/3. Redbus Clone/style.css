@@ -13,6 +13,9 @@
     list-style: none;
     text-decoration: none;
 }
+* button{
+    cursor: pointer;
+}
 body{
     width: 100vw;
     height: 100vh;
@@ -36,6 +39,7 @@ nav{
     margin-top: -13vh;
     z-index: 100;
     background: #fff;
+    box-shadow: 0px 0px 5px 0px #e3dbdb;
 }
 
 
@@ -80,6 +84,7 @@ nav{
     display: block;
     margin: auto;
     margin-bottom: 6px;
+    filter: saturate(20%) brightness(30%);
 }
 
 .nav-items-right{
@@ -101,6 +106,10 @@ nav{
     padding: 2px;
     margin-right: 4px;
    
+}
+.down{
+    font-size: 0.5rem;
+    
 }
 .nav-items-right button span{
     color: var(--text-color);
@@ -339,40 +348,694 @@ header{
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0 5rem;
+    padding: 0 6rem;
+    margin-bottom: 0;
 }
 /* booking section starts here */
 
 .booking-section{
     display: flex;
     padding: 0 30px;
-    /* background-color: gray; */
     height: 90vh;
     
 }
 .booking-content{
     display: flex;
     flex-direction: column;
+    width:50%;
 }
 .booking-content p{
     font-size: 2.5rem;
+    line-height: 3.8rem;
 }
 
+.booking-choice-nav{
+    margin-top: 35px;
+    width: 83%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(190, 177, 177);
+    cursor: pointer;
+}
+.bus-booking{
+    display: flex;
+    color:#D84E55;
+    padding: 0px 20px;
+    border-bottom: 3px solid #D84E55;
+}
+.bus-booking p{
+    font-size: 1rem;
+    font-weight: 900;
+    margin-left: 15px;
+}
+
+.train-booking {
+    display: flex;
+    padding: 0px 25px;
+}
+.train-booking img{
+    width: 50px;
+    filter: saturate(20%) brightness(30%);
+}
+.train-booking p{
+    font-size: 1rem;
+    margin-left: 15px;
+}
+
+.train-booking:hover{
+    background: #ddcdcdd1;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.booking-content h4{
+    margin: 35px 2px;
+    font-weight: 400;
+    cursor:text;
+}
+
+.booking-choice-items{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.booking-item{
+    display: flex;
+    align-items: center;
+    width: 50%;
+  
+}
+.booking-content h6{
+    font-size: 1rem;
+    font-size: 900;
+    margin-left: 25px;
+}
+
+.booking-button{
+    width: 47%;
+    padding: 16px 20px;
+    border:none;
+    background: #D84E55;
+    margin-top: 40px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+.booking-button i{
+    font-size: 1.5rem;
+
+
+}
 
 .booking-image{
     background: url("https://s3.rdbuz.com/web/images/homeV2/AboutUs/aboutUsImg.svg");
     background-size: cover;
     background-repeat: no-repeat;
     flex-basis: 50%;
-
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
 .booking-image img{
     margin-top: 10rem; 
-    max-width: 100%;
-    height: 100vh;
+    position: absolute;
+    bottom: 15%;
+    right: 2%;
 }
 /* booking section ends here */
-/* ------------------------------------------------------ */
+
+/* sharing section starts here */
+
+.sharing-section{
+    /* margin: 12rem auto; */
+    margin: 12rem auto 0;
+    background: url("https://s1.rdbuz.com/web/images/homeV2/appinstall/appInstallbg.svg");
+    width: 97%;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.sharing-section h1{
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding: 30px;
+}
+.sharing-content{
+   display:flex;
+   padding: 0 30px;
+   gap: 100px;
+   align-items: center;
+}
+.sharing-card{
+    background: #fff;
+    width: 380px;
+    height: 260px;
+    border-radius: 14px;
+    padding: 40px;
+    flex-direction: column;
+    display: flex;
+    gap: 25px;
+}
+.sharing-card h3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+}
+.sharing-card>h3 i{
+    background: #1fad6a;
+    color: #fff;
+    padding: 6px;
+    border-radius: 50%;
+    font-size: 0.7rem;
+
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.store{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.store:nth-child(1){
+    padding-right: 30px;
+    border-right: 1px solid #595757bc;
+}
+.store h3{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.store h3 i{
+    font-size: 1rem;
+}
+
+.store h5:nth-child(2){
+    font-weight: 400;
+}
+
+.scanner{
+  width: 70px;
+
+}
+.scanner h4{
+    color: #fff;
+    margin-bottom: 10px;
+}
+.downloads{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 150px;
+    color: #fff;
+}
+
+/* sharing section ends here */
+
+/* prime booking section starts here */
+
+.prime-booking-section{
+    margin: -7rem auto 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 30px;
+}
+.prime-booking-section img{
+    margin: auto;
+   
+}
+.prime-cards{
+    display: flex;
+    gap: 50px;
+    
+}
+.prime-card{
+    display: flex;
+    width: 360px;
+    height: 23vh;
+    background: linear-gradient(#374896,#774687);
+    padding: 15px 20px;
+    gap: 25px;
+    color: #fff;
+    border-radius: 20px;
+}
+.card-right p{
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    margin-top:15px;
+}
+/* prime booking section ends here */
+
+/* partner section start here */
+
+.partner-section{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 5rem;
+    padding: 0 30px;
+}
+.partner-section h1{
+    font-size: 2.5rem;
+    color: #292525d8;
+    font-weight: 400;
+}
+
+.partener-middle-div{
+    display: flex;
+    justify-content: space-between;
+}
+.partener-middle-div h2{
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #292525d8;
+}
+.partener-middle-div button{
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px solid #7a747495;
+    padding: 12px 25px;
+    border-radius: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.partener-middle-div button:hover{
+    box-shadow: 0px 0px 10px 5px #d8cfcfe0;;
+}
+
+.st-logo{
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+.st{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+}
+.st img{
+    width: 100px;
+}
+.st:nth-child(4) img{
+   height: 100px;
+   max-width: 100%;
+}
+.st h4{
+    font-weight: 400;
+    padding: 10px 25px;
+}
+.st:hover h4{
+    background: #e3dcdcbc;
+    cursor: pointer;
+    border-radius: 23px;
+    transition: all 0.2s ease-in;
+}
+/* partner section ends here */
+
+/* operators section starts here */
+
+.operators-section{
+    display: flex;
+    padding: 0 30px;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 8rem;
+}
+.operator-heading{
+    display: flex;
+    justify-content: space-between;
+}
+.operator-heading h2{
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #292525d8;
+}
+.operator-heading button{
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px solid #7a747495;
+    padding: 12px 25px;
+    border-radius: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.operator-heading button:hover{
+    box-shadow: 0px 0px 10px 5px #d8cfcfe0;;
+}
+.operators{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 22px 5px;
+    width: 90%;
+}
+.operators a{
+    padding: 12px 7px;
+    color: #292525d8;
+    border-radius: 40px;
+    justify-self: start;
+}
+.operators a:hover{
+    background: #e3dcdcbc;
+}
+/* operators section ends here */
+
+
+/* presence section starts here */
+
+.presence-section{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 7rem;
+    padding: 0 30px;
+}
+.presence-section h1{
+    font-size: 2.5rem;
+    color: #131212;
+    font-weight: 500;
+}
+.countries{
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+.country{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+    cursor: pointer;
+}
+.country img{
+    width: 130px;
+}
+.country h2{
+    font-weight: 500;
+    padding: 10px 25px;
+}
+/* presence section ends here */
+
+
+/* instruction section starts here */
+
+
+.instruction-section{
+    display: flex;
+    padding: 0 30px;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 8rem;
+}
+.instruction-section h1{
+    font-size: 2.5rem;
+    color: #131212;
+    font-weight: 400;
+
+}
+.instruction-section p{
+    line-height: 2rem;
+}
+.instruction-section p a{
+    font-weight: bold;
+}
+
+/* instruction section ends here */
+
+
+
+/* deal section starts here */
+
+
+.deal-section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 7rem;
+    padding: 0 30px;
+    gap: 15px;
+}
+.deal-section h1{
+    font-size: 2.5rem;
+    color: #131212;
+    font-weight: 400;
+}
+.deal-section p{
+    line-height: 2rem;
+}
+
+.deal-card{
+    width: 100%;
+    background: url("https://st.redbus.in/seo/common/redDeals_bg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    padding: 50px 50px;
+    border: 1px solid #c0b7b775;
+    border-radius: 13px;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+}
+.deal-card img{
+    width: 55px;
+}
+
+
+.deal-info{
+    display: flex;
+    gap: 20px;
+}
+.deal-info h2{
+    font-weight: 700;
+    color: #524d4d;
+}
+.deal-info h2 a{
+    color: #D84E55;
+}
+
+.deal-inner-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.deals{
+    display: flex;
+    gap: 10px;
+}
+.deals h4{
+    color: #524d4d;
+    border-right: 1px solid #000;
+    padding-right: 7px;
+}
+.deals h4:nth-child(3){
+    border: none;
+}
+.deals h4 a{
+    color: #D84E55;
+}
+
+
+.deal-card button{
+    padding: 15px 25px;
+    border: none;
+    background: #D84E55;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+/* deal section ends here */
+
+/* FAQs section starts here */
+
+.FAQ-section{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 1rem;
+    padding: 0 30px;
+}
+.FAQ-section h1{
+    font-size: 2.5rem;
+    color: #292525;
+    font-weight: 400;
+}
+
+.FAQ-nav-items{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.FAQ-nav-items a{
+    padding: 15px 10px;
+    color: #292525;
+    border-radius: 2px;
+}
+.FAQ-nav-items a:nth-child(1){
+    border-bottom: 3px solid #D84E55;
+    color: #D84E55;
+}
+.FAQ-nav-items a:hover{
+    border-bottom: 3px solid #cbbfbf;
+}
+.FAQ-questions{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px ;
+    border: 1px solid #f0e9e9e3;
+    border-radius: 14px;
+
+}
+.question h5{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.question i{
+    font-size: 1.3rem;
+}
+
+.scroll-up-button{
+    align-self: flex-end;
+    font-size: 1.1rem;
+    padding: 10px 12px;
+    height: 60px;
+    width: 40px;
+    background-color: transparent;
+    border: 1px solid #958c8c;
+    border-radius: 15px;
+    color: #504b4b;
+    position: relative;
+}
+.scroll-up-button i{
+    animation: motion 2s infinite;
+    animation-direction: alternate;
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    font-size: 1.4rem;
+    
+}
+@keyframes motion {
+    from{
+        top: 10px;
+    }
+    to{
+        top: 25px;
+    }
+}
+
+/* FAQs section ends here */
+
+/* 
+------------------------------------------------------ */
 /* content wrapper ends here */
 /* ------------------------------------------------------ */
+
+
+
+/* footer starts here */
+
+
+.footer{
+    margin: auto;
+    width: 100%;
+    padding:2rem 8rem;
+    background-color: #F7F7F7;
+}
+
+.footer-top{
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    
+}
+.top-content{
+    display: flex;
+    justify-content: space-between;
+    color: #231d1d;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #efe2e2;
+}
+.top-content i{
+    font-size: 1.5rem;
+    color: #5f5555ec;
+}
+
+
+/* Footer middle starts here */
+.footer-middle{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #cbbfbf;
+}
+.description{
+    width: 270px;
+    
+}
+.description img{
+    width: 100px;
+}
+.description p{
+    font-size: 0.9rem;
+    margin-top: 20px;
+    color: #504b4b
+}
+.spacer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.spacer h4{
+    font-size: 1.2rem;
+}
+.spacer a{
+    font-size: 0.9rem;
+    color: #504b4b;
+}
+
+
+/* Footer end starts here */
+
+.footer-end{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+.footer-end p{
+    font-size: 0.9rem;
+    color: #504b4b
+}
+.sharing-options{
+    display: flex;
+    gap: 25px;
+    cursor: pointer;
+}
+/* footer ends here */
+/* 
+
+
+------------------------------------------------------ */
